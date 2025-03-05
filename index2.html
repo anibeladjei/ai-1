@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmer's Premium Goods</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <h1>Farmer's Premium Goods</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Wishlist</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Homepage - Featured Products Section -->
+  <section class="featured-products">
+    <h2>Featured Products</h2>
+    <div class="product-list">
+      <!-- Featured Product 1 -->
+      <div class="product-card">
+        <img src="images/product1.jpg" alt="Organic Honey">
+        <h3>Organic Honey</h3>
+        <p class="price">$25.00</p>
+        <button class="add-to-cart" onclick="addToCart('&#10084;&#', 25)">Add to Cart</button>
+        <button class="add-to-wishlist" onclick="addToWishlist('Organic Honey')">Add to Wishlist</button>
+        <div class="share-buttons">
+          <button onclick="shareProduct('Organic Honey')">Share</button>
+        </div>
+      </div>
+
+      <!-- Featured Product 2 -->
+      <div class="product-card">
+        <img src="images/product2.jpg" alt="Fresh Farm Eggs">
+        <h3>Fresh Farm Eggs</h3>
+        <p class="price">$10.00</p>
+        <button class="add-to-cart" onclick="addToCart('&#10084;&#', 10)">Add to Cart</button>
+        <button class="add-to-wishlist" onclick="addToWishlist('Fresh Farm Eggs')">Add to Wishlist</button>
+        <div class="share-buttons">
+          <button onclick="shareProduct('Fresh Farm Eggs')">Share</button>
+        </div>
+      </div>
+
+      <!-- Featured Product 3 -->
+      <div class="product-card">
+        <img src="images/product3.jpg" alt="Organic Avocados">
+        <h3>Organic Avocados</h3>
+        <p class="price">$15.00</p>
+        <button class="add-to-cart" onclick="addToCart('Organic Avocados', 15)">Add to Cart</button>
+        <button class="add-to-wishlist" onclick="addToWishlist('Organic Avocados')">Add to Wishlist</button>
+        <div class="share-buttons">
+          <button onclick="shareProduct('Organic Avocados')">Share</button>
+        </div>
+      </div>
+
+      <!-- Featured Product 4 -->
+      <div class="product-card">
+        <img src="images/product4.jpg" alt="Farm Fresh Milk">
+        <h3>Farm Fresh Milk</h3>
+        <p class="price">$8.00</p>
+        <button class="add-to-cart" onclick="addToCart('Farm Fresh Milk', 8)">Add to Cart</button>
+        <button class="add-to-wishlist" onclick="addToWishlist('Farm Fresh Milk')">Add to Wishlist</button>
+        <div class="share-buttons">
+          <button onclick="shareProduct('Farm Fresh Milk')">Share</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart & Checkout Section -->
+  <section class="cart-checkout">
+    <h2>Your Cart</h2>
+    <div id="cart-items">
+
+      
+    </div>
+    <div class="promo-code">
+      <input type="text" id="promo-code" placeholder="Enter Promo Code">
+      <button onclick="applyPromoCode()">Apply</button>
+    </div>
+    <button onclick="checkout()">Proceed to Checkout</button>
+  </section>
+
+  <script src="main2.js"></script>
+</body>
+</html>
